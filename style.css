@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+body{
+    background-image: url("fundo.png");
+    background-repeat: repeat;
+    background-size: cover;
+}
+/*estiliza o tamanho, cor e posição*/
+.menu_oculto{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #add1d6;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+/*estiliza oque esta dentro do menu*/
+.navbar{
+    background-color: #c0f0f7;
+}
+
+h3, #title{
+    color: #107faa;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.menu_oculto a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:#107faa ;
+    display: block;
+    transition: 0.5s;
+}
+/*muda a cor ao passar o mouse em cima*/
+.menu_oculto a:hover{
+    color: #fff;
+}
+/*estiliza a posição do botao x*/
+.btn_fechar{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#principal{
+    padding: 16px;
+    transition: margin-left 0.5s;
+    color:#107faa ;
+}
+/*para  o menu se ajudar com o tamanho a tela, responsividade*/
+@media screen and(max-height: 450px){
+    .menu_oculto{padding-top: 15px;}
+    .menu_oculto a{font-size: 18;}
+}
+
+.sub_menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    background-color: #e4f3f5;
+}
+.sub_menu ul li a{
+    color: #043e46;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    transition: 1s;
+}
+
+
+.menu_drop{
+    position: relative;
+}
+.menu_drop .drop{
+    position: absolute;
+    background-color: #edf5f7;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+.menu_drop .drop a{
+    padding: 20px;
+}
+.menu_drop:hover .drop{
+    height: 285px;
+}
+
+
+.tela_login{
+   background-color: #c0f0f7; 
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   padding: 80px;
+   border-radius: 15px;
+   color:#107faa;
+}
+#input_login{
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    
+}
+#btn_login{
+    background-color: #107faa;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+}
+#btn_login:hover{
+    background-color: #043e46;
+}
+
+#botao_add_emp{
+    border-radius: 50%;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+}
+

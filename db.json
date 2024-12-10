@@ -1,0 +1,18 @@
+{
+    "usuarios": [
+        {
+            "cpf":1979867566,
+            "imgScr":"img/user.jpg",
+            "nome":"Estrela",
+            "data_nasc":"07/08/2000",
+            "telefone":"546467879"
+        },
+        {
+            "cpf":6746797997,
+            "imgScr":"img/user.jpg",
+            "nome":"Sarah",
+            "data_nasc":"08/07/2002",
+            "telefone":"4697487769"
+        }
+    ]
+}
